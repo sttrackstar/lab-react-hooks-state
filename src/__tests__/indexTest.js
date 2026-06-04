@@ -4,8 +4,6 @@ import App from '../App'
 import { sampleProducts } from '../components/ProductList'
 import '@testing-library/jest-dom'
 
-describe('Shopping App', () => {
-
 test('toggles dark mode on button click', () => {
   render(<App />)
   const toggleBtn = screen.getByRole('button', { name: /toggle/i })
@@ -49,6 +47,4 @@ test('adds items to cart', () => {
 
   expect(screen.getByText(/shopping cart/i)).toBeInTheDocument()
   expect(screen.getByText(/Milk is in your cart/i)).toBeInTheDocument()
-})
-
 })

@@ -10,8 +10,12 @@ const ProductCard = ({ product, addToCart }) => {
       <p>Price: {product.price}</p>
       <p>Status: {product.inStock ? 'In Stock' : 'Out of Stock'}</p>
 
-
-      <button data-testid={'product-' + product.id} onClick={() => addToCart(product)} >Add to Cart</button>
+      <button
+        data-testid={'product-' + product.id}
+        onClick={() => addToCart(product)}
+      >
+        Add to Cart
+      </button>
     </div>
   )
 }

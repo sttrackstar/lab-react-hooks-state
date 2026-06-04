@@ -1,13 +1,12 @@
 import React from 'react'
-import ProductCard from './ProductCard'
 
-const Cart = ({cart}) => {
+const Cart = ({ cart }) => {
   return (
     <div>
       <h2>Shopping Cart</h2>
       <ul>
-        {cart.map((product, index) => (
-        <li key={index}>{product.name} is in your cart.</li>
+        {cart.map((item, index) => (
+          <li key={index}>{item.name} is in your cart.</li>
         ))}
       </ul>
     </div>
