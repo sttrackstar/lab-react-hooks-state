@@ -1,9 +1,9 @@
 import React from 'react'
 
-const DarkModeToggle = ({ darkMode, toggleDarkMode }) => {
+const DarkModeToggle = ({ isDarkMode, toggleDarkMode }) => {
   return (
     <button onClick={toggleDarkMode}>
-      {darkMode ? 'Toggle Light Mode' : 'Toggle Dark Mode'}
+      Toggle {isDarkMode ? 'Light' : 'Dark'} Mode
     </button>
   )
 }
