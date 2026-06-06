@@ -7,8 +7,6 @@ const ProductCard = ({ product, addToCart }) => {
       <h3>{product.name}</h3>
       <p>Price: {product.price}</p>
       <p>Status: {product.inStock ? 'In Stock' : 'Out of Stock'}</p>
-      
-      {/* Add to Cart button - REMOVED disabled attribute */}
       <button 
         data-testid={'product-' + product.id}
         onClick={() => addToCart(product)}

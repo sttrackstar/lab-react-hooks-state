@@ -1,17 +1,15 @@
 import React from 'react';
 import ProductCard from './ProductCard';
 
-// Sample product data
 export const sampleProducts = [
-  { id: 1, name: 'Apple', price: '$1.00', category: 'Fruits', inStock: true },
-  { id: 2, name: 'Milk', price: '$2.50', category: 'Dairy', inStock: false },
-  { id: 3, name: 'Banana', price: '$0.80', category: 'Fruits', inStock: true },
-  { id: 4, name: 'Cheese', price: '$3.00', category: 'Dairy', inStock: true },
-  { id: 5, name: 'Orange', price: '$1.20', category: 'Fruits', inStock: true }
+  { id: 1, name: 'Apple', price: '$0.99', category: 'Fruits', inStock: true },
+  { id: 2, name: 'Cookies', price: '$9.99', category: 'Bakery', inStock: false },
+  { id: 3, name: 'Oranges', price: '$5.99', category: 'Fruits', inStock: true },
+  { id: 4, name: 'Frozen Pizza', price: '$12.99', category: 'Frozen', inStock: true },
+  { id: 5, name: 'Milk', price: '$2.99', category: 'Dairy', inStock: true }
 ];
 
 const ProductList = ({ selectedCategory, addToCart }) => {
-  // Filter products based on selected category
   const filteredProducts = selectedCategory === 'all'
     ? sampleProducts
     : sampleProducts.filter(product => product.category === selectedCategory);
