@@ -3,7 +3,6 @@ import { render, screen, fireEvent } from '@testing-library/react'
 import App from '../App'
 import { sampleProducts } from '../components/ProductList'
 import '@testing-library/jest-dom'
-import { test, expect, describe } from '@jest/globals'
 
 test('toggles dark mode on button click', () => {
   render(<App />)
