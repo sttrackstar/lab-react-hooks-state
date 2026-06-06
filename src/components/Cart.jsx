@@ -4,6 +4,7 @@ const Cart = ({ cart }) => {
   return (
     <div>
       <h2>Shopping Cart</h2>
+      {/* Bonus: Display cart total */}
       <p>Total Items: {cart.length}</p>
       <ul>
         {cart.map((item, index) => (

@@ -1,3 +1,35 @@
-/* TODO (optional): Define styles for dark mode */
 
-/* TODO (optional): Ensure text and background colors adjust for dark mode */
+
+.toggleButton {
+  padding: 12px 24px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggleButton:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.toggleButton:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Different styles for dark mode button */
+.darkModeButton {
+  background-color: #FFA500;
+}
+
+.darkModeButton:hover {
+  background-color: #FF8C00;
+}
